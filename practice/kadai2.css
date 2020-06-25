@@ -1,0 +1,74 @@
+#wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 90px;
+}
+h1 {
+    font-size: 17px ;
+    display: inline;
+    background: linear-gradient(transparent 70%,#f7ff4e 0);
+}  
+ul {
+    margin: 10px 0;
+    padding: 13px 0;
+}
+li {
+    background-color: rgb(255, 255, 255);
+    font-weight: 600;
+    padding : 0.1em 0.5em ;
+    border : solid 1px #b3b3b3 ;
+    border-top : solid 1px #e0e0e0 ;
+    border-bottom : solid 1px #717171 ;
+    box-shadow : 0 2px 6px rgba(100, 100, 100, 0.3) ;
+    margin-bottom: 6px;
+    height: 52px;
+}
+.img-box {
+    height: 50px;
+    background-color: pink;
+    margin: 0 8px 8px 0;
+    padding: 10px 0 0 14px;
+    line-height: 45px;
+}
+.choice {
+    height: 50px;
+    margin: 0 8px 8px 0;
+    padding: 10px 0 0 14px;
+    line-height: 45px;
+    list-style: none;
+}
+.hide {
+    display: none;
+}
+.judge {
+    height: 70px;
+    margin: 0 8px 8px 0;
+    padding: 10px 0 0 14px;
+    line-height: 0px;
+    list-style: none;
+    display: block;
+}
+.space{
+    height: 50px;
+}
+button,
+input[type="button"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-weight: 600;
+    cursor: pointer;
+}
+:disabled {
+    color: inherit;
+}
+.good {
+    background: linear-gradient(transparent 90%, #08b3f0 0%);
+}
+.bad {
+    background:linear-gradient(transparent 90%, #fd6647 0%);
+}

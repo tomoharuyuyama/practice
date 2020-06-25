@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript test</title>
+    <style>
+        /* body{
+            display: flex;
+            flex-wrap: wrap;
+        } */
+        /* .box{
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            cursor: pointer;
+            transition: 0.8s;
+            margin: 0 8px 8px 0;
+            text-align: center;
+            line-height: 100px;
+        } */
+        /* .win{
+            background: pink;
+            border-radius: 50%;
+            transform: rotate(360deg);
+        }
+        .lose{
+            transform: scale(0.9);
+        } */
+        h1 {
+            font-size: 17px ;
+            display: inline;
+            background: linear-gradient(transparent 70%,#f7ff4e 0);
+        }  
+        ul {
+            margin: 10px 0;
+            padding: 13px 0;
+        }
+        li {
+            background-color: rgb(255, 255, 255);
+            font-weight: 600;
+            padding : 0.1em 0.5em ;
+            border : solid 1px #b3b3b3 ;
+            border-top : solid 1px #e0e0e0 ;
+            border-bottom : solid 1px #717171 ;
+            box-shadow : 0 2px 6px rgba(100, 100, 100, 0.3) ;
+            margin-bottom: 6px;
+            height: 52px;
+        }
+        .img-box {
+            height: 50px;
+            background-color: pink;
+            cursor: pointer;
+            margin: 0 8px 8px 0;
+            padding: 10px 0 0 14px;
+            line-height: 45px;
+        }
+        .choice {
+            height: 50px;
+            cursor: pointer;
+            margin: 0 8px 8px 0;
+            padding: 10px 0 0 14px;
+            line-height: 45px;
+            list-style: none;
+        }
+        .hide {
+            display: none;
+        }
+        .judge {
+            display: block;
+        }
+        .space{
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        'use strict'
+        const qa = new Array();
+        qa[0] = ["たかわ","こうわ","たかなわ","正解は「たかなわ」です！", 2];
+        qa[1] = ["かめど","かめいど","かめと","正解は「かめいど」です！", 1];
+        qa[2] = ["かゆまち","おかとまち","こうじまち","正解は「こうじまち」です！", 2];
+        qa[3] = ["おかどもん","おなりもん","ごせいもん","正解は「おなりもん」です！", 1];
+        qa[4] = ["たたら","たたりき","とどろき","正解は「とどろき」です！", 2];
+        qa[5] = ["しゃくじい","せきこうい","いじい","正解は「しゃくじい」です！", 0];
+        qa[6] = ["ざっしき","ざっしょく","ぞうしき","正解は「ぞうしき」です！", ];
+        qa[7] = ["ごろしちょう","みとちょう","おかちまち","正解は「おかちまち」です！", 2];
+        qa[8] = ["しこね","ろっこつ","ししぼね","正解は「ししぼね」です！", 2];
+        qa[9] = ["こぐれ","こしゃく","こばく","正解は「こぐれ」です！", 0];
+
+        
+        for (let k = 0; k < qa.length; k++) {
+            const h1 = document.createElement('h1');
+            document.body.appendChild(h1);
+            h1.textContent = (k+1) + '. この地名はなんて読む？';
+            
+            const div = document.createElement('div');
+            div.classList.add('img-box');
+            // const img = document.getElementById("image_place");
+            div.src = "imgbox/kameido.png";
+            // // document.querySelector('img-box').write('<img src="imgbox/kameido.png" alt="画像の解説文">');
+            // div.textContent = 'イメージ画像';
+            document.body.appendChild(div);
+    
+            for (let i = 0; i < 3; i++) {
+                const li = document.createElement('li');
+                li.classList.add('choice');
+                
+                li.textContent = qa[k][i];
+                document.body.appendChild(li);
+            };
+            
+            const li_1 = document.createElement('li');
+            li_1.classList.add('choice');
+            // li_1.classList.add('hide');
+            li_1.textContent = "正解！" + "\n" + qa[k][3];//選択肢をシャッフルできる様になったら正解を配列0に置いてqa[k][3]をqa[k][0]にして’正解は「’+ qa[k][0]+'」です！'みたいにしたい。
+            document.body.appendChild(li_1);
+            // li.addEventListener('click', () => {
+            //     });
+            
+            const div_space = document.createElement('div');
+            div_space.classList.add('space');
+            document.body.appendChild(div_space);
+            
+        }
+        
+
+    </script>
+        
+
+        
+
+        
+        <!-- ///////////////////////////////////////////////////////////// -->
+        
+        <!-- <script>
+
+        const num = 5;
+        const winner = Math.floor(Math.random() * num);//0-4
+
+
+        for (let i = 0; i < num; i++) {
+            
+            const div = document.createElement('div');
+            div.classList.add('box');
+
+            div.addEventListener('click', () => {
+                if (i === winner) {
+                    div.textContent = 'Win!';
+                    div.classList.add('win');
+                } else{
+                    div.textContent = 'Lose!';
+                    div.classList.add('lose');
+                }
+            });
+
+            // document.body.appendChild(div);
+        }
+
+    </script> -->
+</body>
+</html>
+
+<!-- 
+qa = new Array();
+qa[0] = ["たかわ","こうわ","たかなわ","正解は「たかなわ」です！", 2];
+qa[1] = ["かめど","かめいど","かめと","正解は「かめいど」です！", 1];
+qa[2] = ["かゆまち","おかとまち","こうじまち","正解は「こうじまち」です！", 2];
+qa[3] = ["おかどもん","おなりもん","ごせいもん","正解は「おなりもん」です！", 1];
+qa[4] = ["たたら","たたりき","とどろき","正解は「とどろき」です！", 2];
+qa[5] = ["しゃくじい","せきこうい","いじい","正解は「しゃくじい」です！", 0];
+qa[6] = ["ざっしき","ざっしょく","ぞうしき","正解は「ぞうしき」です！", ];
+qa[7] = ["ごろしちょう","みとちょう","おかちまち","正解は「おかちまち」です！", 2];
+qa[8] = ["しこね","ろっこつ","ししぼね","正解は「ししぼね」です！", 2];
+qa[9] = ["こぐれ","こしゃく","こばく","正解は「こぐれ」です！", 0]; -->
+
+
+
+<!-- 
+    うまくいかなかったところ
+    正誤をするボックスの表示で、正解！が改行できない。
+-->

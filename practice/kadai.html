@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>課題-1</title>
+    <link rel="stylesheet" href="kadai.css">
+    
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="main">
+                <div class="quiz"><!-- quiz -->
+                    <h1>1. この地名はなんて読む？</h1>
+                    <img src="imgbox/takanawa.png" alt="高輪">
+                    <ul>
+                        <li class="choice1">
+                            <p id="たかわ" onclick="yuyama(0, 'judge_0', 'judge_0_0', 0)"></p>
+                        </li>
+                        <li class="choice2">
+                            <p id="こうわ" onclick="yuyama(0, 'judge_0', 'judge_0_0', 0)"></p>
+                        </li>
+                        <li class="choice3">
+                            <p id="たかなわ" onclick="yuyama(1, 'judge_0', 'judge_0_0', 0)"></p>
+                        </li>
+                        <li class="choice4" id="judge_0">
+                            <div class="ancer">
+                                <p><span id="judge_0_0"></span><br><span id="正解は「たかなわ」です！"></span></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div><!-- End quiz -->
+                <div class="quiz"><!-- quiz -->
+                    <h1>2. この地名はなんて読む？</h1>
+                    <img src="imgbox/kameido.png" alt="亀戸">
+                    <ul>
+                        <li class="choice1">
+                            <p id="かめど" onclick="yuyama(0, 'judge_1', 'judge_0_1', 1)"></p>
+                        </li>
+                        <li class="choice2">
+                            <p id="かめと" onclick="yuyama(0, 'judge_1', 'judge_0_1', 1)"></p>
+                        </li>
+                        <li class="choice3">
+                            <p id="かめいど" onclick="yuyama(1, 'judge_1', 'judge_0_1', 1)"></p>
+                        </li>
+                        <li class="choice4" id="judge_1">
+                            <div class="ancer">
+                                <p><span id="judge_0_1"></span><br><span id="正解は「かめいど」です！"></span></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div><!-- End quiz -->
+                <div class="quiz"><!-- quiz -->
+                    <h1>3. この地名はなんて読む？</h1>
+                    <img src="imgbox/koujimati.png" alt="麹町">
+                    <ul>
+                        <li class="choice1">
+                            <p id="おかとまち" onclick="yuyama(0, 'judge_2', 'judge_0_2', 2)"></p>
+                        </li>
+                        <li class="choice2">
+                            <p id="かゆまち" onclick="yuyama(0, 'judge_2', 'judge_0_2', 2)"></p>
+                        </li>
+                        <li class="choice3">
+                            <p id="こうじまち" onclick="yuyama(1, 'judge_2', 'judge_0_2', 2)"></p>
+                        </li>
+                        <li class="choice4" id="judge_2">
+                            <div class="ancer">
+                                <p><span id="judge_0_2"></span><br><span id="正解は「こうじまち」です！"></span></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div><!-- End quiz -->
+                <div class="quiz"><!-- quiz -->
+                    <h1>4. この地名はなんて読む？</h1>
+                    <img src="imgbox/onarimon.png" alt="御成門">
+                    <ul>
+                        <li class="choice1">
+                            <p id="おかどもん" onclick="yuyama(0, 'judge_3', 'judge_0_3', 3)"></p>
+                        </li>
+                        <li class="choice2">
+                            <p id="おなりもん" onclick="yuyama(1, 'judge_3', 'judge_0_3', 3)"></p>
+                        </li>
+                        <li class="choice3">
+                            <p id="ごせいもん" onclick="yuyama(0, 'judge_3', 'judge_0_3', 3)"></p>
+                        </li>
+                        <li class="choice4" id="judge_3">
+                            <div class="ancer">
+                                <p><span id="judge_0_3"></span><br><span id="正解は「おなりもん」です！"></span></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div><!-- End quiz -->
+                <div class="quiz"><!-- quiz -->
+                    <h1>5. この地名はなんて読む？</h1>
+                    <img src="imgbox/todoroki.png" alt="等々力">
+                    <ul>
+                        <li class="choice1">
+                            <p id="たたら" onclick="yuyama(0, 'judge_4', 'judge_0_4', 4)"></p>
+                        </li>
+                        <li class="choice2">
+                            <p id="たたりき" onclick="yuyama(0, 'judge_4', 'judge_0_4', 4)"></p>
+                        </li>
+                        <li class="choice3">
+                            <p id="とどろき" onclick="yuyama(1, 'judge_4', 'judge_0_4', 4)"></p>
+                        </li>
+                        <li class="choice4" id="judge_4">
+                            <div class="ancer">
+                                <p><span id="judge_0_4"></span><br><span id="正解は「とどろき」です！"></span></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div><!-- End quiz -->
+                <div class="quiz"><!-- quiz -->
+                    <h1>6. この地名はなんて読む？</h1>
+                    <img src="imgbox/syakujii.png" alt="石神井">
+                    <ul>
+                        <li class="choice1">
+                            <p id="しゃくじい" onclick="yuyama(1, 'judge_5', 'judge_0_5', 5)"></p>
+                        </li>
+                        <li class="choice2">
+                            <p id="せきこうい" onclick="yuyama(0, 'judge_5', 'judge_0_5', 5)"></p>
+                        </li>
+                        <li class="choice3">
+                            <p id="いじい" onclick="yuyama(0, 'judge_5', 'judge_0_5', 5)"></p>
+                        </li>
+                        <li class="choice4" id="judge_5">
+                            <div class="ancer">
+                                <p><span id="judge_0_5"></span><br><span id="正解は「しゃくじい」です！"></span></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div><!-- End quiz -->
+                <div class="quiz"><!-- quiz -->
+                    <h1>7. この地名はなんて読む？</h1>
+                    <img src="imgbox/zousiki.png" alt="雑色">
+                    <ul>
+                        <li class="choice1">
+                            <p id="ざっしき" onclick="yuyama(0, 'judge_6', 'judge_0_6', 6)"></p>
+                        </li>
+                        <li class="choice2">
+                            <p id="ざっしょく" onclick="yuyama(0, 'judge_6', 'judge_0_6', 6)"></p>
+                        </li>
+                        <li class="choice3">
+                            <p id="ぞうしき" onclick="yuyama(1, 'judge_6', 'judge_0_6', 6)"></p>
+                        </li>
+                        <li class="choice4" id="judge_6">
+                            <div class="ancer">
+                                <p><span id="judge_0_6"></span><br><span id="正解は「ぞうしき」です！"></span></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div><!-- End quiz -->
+                <div class="quiz"><!-- quiz -->
+                    <h1>8. この地名はなんて読む？</h1>
+                    <img src="imgbox/okatimati.png" alt="御徒町">
+                    <ul>
+                        <li class="choice1">
+                            <p id="ごろしちょう" onclick="yuyama(0, 'judge_7', 'judge_0_7', 7)"></p>
+                        </li>
+                        <li class="choice2">
+                            <p id="みとちょう" onclick="yuyama(0, 'judge_7', 'judge_0_7', 7)"></p>
+                        </li>
+                        <li class="choice3">
+                            <p id="おかちまち" onclick="yuyama(1, 'judge_7', 'judge_0_7', 7)"></p>
+                        </li>
+                        <li class="choice4" id="judge_7">
+                            <div class="ancer">
+                                <p><span id="judge_0_7"></span><br><span id="正解は「おかちまち」です！"></span></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div><!-- End quiz -->
+                <div class="quiz"><!-- quiz -->
+                    <h1>9. この地名はなんて読む？</h1>
+                    <img src="imgbox/sisibone.png" alt="鹿骨">
+                    <ul>
+                        <li class="choice1">
+                            <p id="しこね" onclick="yuyama(0, 'judge_8', 'judge_0_8', 8)"></p>
+                        </li>
+                        <li class="choice2">
+                            <p id="ろっこつ" onclick="yuyama(0, 'judge_8', 'judge_0_8', 8)"></p>
+                        </li>
+                        <li class="choice3">
+                            <p id="ししぼね" onclick="yuyama(1, 'judge_8', 'judge_0_8', 8)"></p>
+                        </li>
+                        <li class="choice4" id="judge_8">
+                            <div class="ancer">
+                                <p><span id="judge_0_8"></span><br><span id="正解は「ししぼね」です！"></span></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div><!-- End quiz -->
+                <div class="quiz"><!-- quiz -->
+                    <h1>10. この地名はなんて読む？</h1>
+                    <img src="imgbox/kogure.png" alt="小榑">
+                    <ul>
+                        <li class="choice1">
+                            <p id="こぐれ" onclick="yuyama(1, 'judge_9', 'judge_0_9', 9)"></p>
+                        </li>
+                        <li class="choice2">
+                            <p id="こしゃく" onclick="yuyama(0, 'judge_9', 'judge_0_9', 9)"></p>
+                        </li>
+                        <li class="choice3">
+                            <p id="こばく" onclick="yuyama(0, 'judge_9', 'judge_0_9', 9)"></p>
+                        </li>
+                        <li class="choice4" id="judge_9">
+                            <div class="ancer">
+                                <p><span id="judge_0_9"></span><br><span id="正解は「こぐれ」です！"></span></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div><!-- End quiz -->
+            </div>
+        </div>
+    </div>
+    <script src="kadai.js"></script>
+</body>
+</html>
